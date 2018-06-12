@@ -13,13 +13,13 @@ export default class SimpleComponent extends Component{
   }
 
   handleClick = (e) =>{
-    // let mood
-    // e.target.innerText === "happy" ? mood = "sad" : mood = "happy"
-    // this.setState({
-    //   mood: mood
-    // })
+    let mood
+    this.state.mood === "happy" ? mood = "sad" : mood = "happy"
+    this.setState({
+      mood: mood
+    })
 
-    this.state.mood === "happy" ? this.setState({mood: "sad"}) : this.setState({mood: "happy"})
+    // this.state.mood === "happy" ? this.setState({mood: "sad"}) : this.setState({mood: "happy"})
   }
 
   render(){
